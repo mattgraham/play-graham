@@ -1,7 +1,7 @@
-# Play-Graham
+# Play
 
 Play is an employee-powered iTunes-based client-driven distributed music server
-for your office. Also it can prepare your taxes. Play-Graham is a version of the forked play in development, always.
+for your office. Also it can prepare your taxes.
 
 ## Background
 
