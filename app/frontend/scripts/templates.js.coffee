@@ -62,11 +62,14 @@ templates.star = """
 
 templates.queuing = """
   {{#queued}}
-    <a href="/queue/remove" class="remove-from-queue" data-song-id="{{id}}">remove from queue</a>
+    <li><a href="/queue/remove" class="remove-from-queue" data-song-id="{{id}}">remove from queue</a>
   {{/queued}}
 
   {{^queued}}
-    <a href="/queue/add" class="add-to-queue" data-song-id="{{id}}">add to queue</a>
+    <ul>
+      <li><a href="/queue/add" class="add-to-queue" data-song-id="{{id}}">add song to queue</a></li>
+      <li><a href="/queue/add" class="add-to-queue" data-album-id="{{id}}">add album to queue</a></li>
+    </ul>
   {{/queued}}
 """
 
