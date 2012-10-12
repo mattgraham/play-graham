@@ -66,10 +66,7 @@ templates.queuing = """
   {{/queued}}
 
   {{^queued}}
-    <ul>
-      <li><a href="/queue/add" class="add-to-queue" data-song-id="{{id}}">add song to queue</a></li>
-      <li><a href="/queue/add" class="add-to-queue" data-album-id="{{id}}">add album to queue</a></li>
-    </ul>
+      <a href="/queue/add" class="add-to-queue" data-song-id="{{id}}">add song to queue</a>
   {{/queued}}
 """
 
