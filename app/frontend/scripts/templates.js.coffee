@@ -21,8 +21,7 @@ templates.song = """
 
     <ul class="song-info">
       <li>{{name}}</li>
-      <li>{{{artist_tag}}}</li>
-      <li class="album">{{{album_tag}}}</li>
+      <li>{{{artist_tag}}} - {{{album_tag}}}</li>
     </ul>
 
     <ul class="song-actions">
