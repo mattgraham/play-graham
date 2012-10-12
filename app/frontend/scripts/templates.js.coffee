@@ -22,6 +22,7 @@ templates.song = """
     <ul class="song-info">
       <li>{{name}}</li>
       <li>{{{artist_tag}}}</li>
+      <li class="album">{{{album_tag}}}</li>
     </ul>
 
     <ul class="song-actions">
@@ -63,10 +64,6 @@ templates.star = """
 templates.queuing = """
   {{#queued}}
     <a href="/queue/remove" class="remove-from-queue" data-song-id="{{id}}">remove from queue</a>
-  {{/queued}}
-
-  {{#queued}}
-    <a href="/queue/add" class="add-to-queue" data-album-id="{{album}}">add to queue</a>
   {{/queued}}
 
   {{^queued}}
