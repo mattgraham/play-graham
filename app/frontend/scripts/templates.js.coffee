@@ -65,6 +65,10 @@ templates.queuing = """
     <a href="/queue/remove" class="remove-from-queue" data-song-id="{{id}}">remove from queue</a>
   {{/queued}}
 
+  {{#queued}}
+    <a href="/queue/add" class="add-to-queue" data-album-id="{{album}}">remove from queue</a>
+  {{/queued}}
+
   {{^queued}}
     <a href="/queue/add" class="add-to-queue" data-song-id="{{id}}">add to queue</a>
   {{/queued}}
